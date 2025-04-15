@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom"
 import { Container, Card, Button } from "react-bootstrap"
 import Article from "../types"
 
-function ArticleDetail() {
+const ArticleDetail = function () {
   const { id } = useParams()
   const [article, setArticle] = useState<Article | null>(null)
 

@@ -3,7 +3,7 @@ import { Card, Button, Container, Row, Col } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import Article from "../types"
 
-function HomePage() {
+const HomePage = function () {
   const [articles, setArticles] = useState<Article[]>([])
 
   useEffect(() => {
