@@ -19,13 +19,13 @@ function HomePage() {
         setArticles(data.results)
       })
       .catch((error) => {
-        console.error("Errore nel fetch:", error)
+        console.log("Errore nel fetch:", error)
       })
   }, [])
 
   return (
     <Container className="mt-4">
-      <h1 className="mb-4 text-center">🛰️ Spaceflight News</h1>
+      <h1 className="mb-4 text-center">Spaceflight News</h1>
       <Row xs={1} md={2} lg={3} className="g-4">
         {articles.map((article) => (
           <Col key={article.id}>
